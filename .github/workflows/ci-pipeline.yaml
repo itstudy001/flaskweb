@@ -31,6 +31,6 @@ jobs:
           NAME: ggangpae1
           REPO: flaskweb
         run: |
-          docker build -t $REPO -f ../../Dockerfile
+          docker build -t $REPO -f ../../Dockerfile .
           docker tag $REPO:latest $NAME/$REPO:latest
           docker push $NAME/$REPO:latest 
