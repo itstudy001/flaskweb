@@ -31,7 +31,7 @@ jobs:
         uses: docker/login-action@v1
         with:
           username: ggangpae1
-          password: dckr_pat_E0BlvfTnZhHcvUgyo70_VZyt4x8
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: build and release to DockerHub
         env:
           NAME: ggangpae1
