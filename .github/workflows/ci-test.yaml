@@ -37,4 +37,6 @@ jobs:
         with:
           username: ggnagpae1
           password: ${{ secrets.DOCKERHUB_TOKEN}}
+      - name: Image Push
+        run: docker push ggnagpae1/flaskweb:latest
 
