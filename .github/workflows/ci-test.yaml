@@ -28,6 +28,6 @@ jobs:
           python-version: "3.13"
       - run: pip install -r requirements.txt
       - name: Image Build
-        run: docker build -t ggnagpae1/flaskweb
+        run: docker build -t ggnagpae1/flaskweb .
       - name: Image Display
         run: docker images
